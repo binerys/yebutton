@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'iron-on_blackletterregular';
+  src: url("iron-onblackletter-regular.woff2") format("woff2"), url("iron-onblackletter-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -404,47 +409,160 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* line 4, site.css.scss */
-body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* Button - these styles are the good stuff
+ * Made by: Joshua Hibbert
+ * Source: https://codepen.io/joshnh/pen/KqzvG
+ */
+/* line 6, _button.scss */
+.button {
+  background-color: #999;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  border: none;
+  border-radius: .5em;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), 0 0.25em 0.25em rgba(0, 0, 0, 0.05);
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "iron-on_blackletterregular";
+  line-height: 1.5;
+  margin: 0 .5em 1em;
+  padding: .5em 1.5em .75em;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle; }
+
+/* line 32, _button.scss */
+.button:hover {
+  outline: none; }
+
+/* line 35, _button.scss */
+.button:hover,
+.button:focus {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), inset 0 0 0 3em rgba(255, 255, 255, 0.2), 0 0.25em 0.25em rgba(0, 0, 0, 0.05); }
+
+/* line 45, _button.scss */
+.button:active {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.1), inset 0 0 0 3em rgba(255, 255, 255, 0.2), inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.25);
+  margin-top: .25em;
+  outline: none;
+  padding-bottom: .5em; }
+
+/* Light Text */
+/* line 60, _button.scss */
+.lightText {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.05), inset 0 -0.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.5), 0 0.25em 0.25em rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25); }
+
+/* line 70, _button.scss */
+.lightText:hover,
+.lightText:focus {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.05), inset 0 -0.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.5), inset 0 0 0 3em rgba(255, 255, 255, 0.2), 0 0.25em 0.25em rgba(0, 0, 0, 0.1); }
+
+/* line 80, _button.scss */
+.lightText:active {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.05), inset 0 0 0 3em rgba(255, 255, 255, 0.2), inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.25); }
+
+/* Large */
+/* line 92, _button.scss */
+.large {
+  font-size: 3em; }
+
+/* Medium */
+/* line 98, _button.scss */
+.medium {
   font-size: 1em; }
 
-/* line 11, site.css.scss */
-.logo img {
-  height: 18.75em;
-  margin-top: 6em; }
+/* Small */
+/* line 104, _button.scss */
+.small {
+  font-size: .75em; }
 
-/* line 16, site.css.scss */
+/* Regular */
+/* line 110, _button.scss */
+.regular {
+  border-radius: .5em; }
+
+/* Square */
+/* line 116, _button.scss */
+.square {
+  border-radius: .25em; }
+
+/* Round */
+/* line 122, _button.scss */
+.round {
+  border-radius: 1.25em; }
+
+/* Red */
+/* line 128, _button.scss */
+.red {
+  background-color: #ff6c6f; }
+
+/* Orange */
+/* line 134, _button.scss */
+.orange {
+  background-color: #f6cf6f; }
+
+/* Yellow */
+/* line 140, _button.scss */
+.yellow {
+  background-color: #fff6c6; }
+
+/* Green */
+/* line 146, _button.scss */
+.green {
+  background-color: #6fcf6f; }
+
+/* Blue */
+/* line 152, _button.scss */
+.blue {
+  background-color: #6fc6ff; }
+
+/* Purple */
+/* line 158, _button.scss */
+.purple {
+  background-color: #f6c6ff; }
+
+/* White */
+/* line 164, _button.scss */
+.white {
+  background-color: #eee; }
+
+/* Grey */
+/* line 170, _button.scss */
+.grey {
+  background-color: #999; }
+
+/* Black */
+/* line 176, _button.scss */
+.black {
+  background-color: #444; }
+
+/* Custom */
+/* line 182, _button.scss */
+.custom {
+  background-color: #960606;
+  color: #f35a66; }
+
+/* line 15, site.css.scss */
+body {
+  background: #f58b57;
+  text-align: center;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 22, site.css.scss */
 h1 {
-  color: rgba(0, 0, 0, 0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.8em;
   font-weight: 400;
   margin: 0; }
 
-/* line 24, site.css.scss */
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300; }
-  /* line 30, site.css.scss */
-  .doc a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear; }
-    /* line 37, site.css.scss */
-    .doc a:hover {
-      background: rgba(0, 0, 0, 0.2);
-      color: white;
-      transition: all 0.15s linear; }
-
-/* line 45, site.css.scss */
+/* line 31, site.css.scss */
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
