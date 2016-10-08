@@ -23,6 +23,8 @@ configure :development do
   activate :livereload
 end
 
+set :relative_links, true
+
 ###
 # Helpers
 ###
@@ -36,6 +38,7 @@ end
 
 # Build-specific configuration
 configure :build do
+
   # Minify CSS on build
   # activate :minify_css
 
