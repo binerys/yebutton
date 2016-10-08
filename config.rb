@@ -20,7 +20,7 @@ page '/*.txt', layout: false
 
 # Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+	activate :livereload
 end
 
 set :relative_links, true
@@ -38,7 +38,8 @@ set :relative_links, true
 
 # Build-specific configuration
 configure :build do
-
+	activate :relative_assets
+	set :http_prefix, '/yebutton'
   # Minify CSS on build
   # activate :minify_css
 
