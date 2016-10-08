@@ -1,0 +1,11 @@
+// COLORS
+$colors: (
+	'pablo-red': #960606,
+	'pablo-light-red': #f35a66,
+	'pablo-orange': #f58b57,
+	'text': #332C2D
+);
+
+@function get-color($key: 'primary'){
+	@return map-get($colors, $key);
+}
