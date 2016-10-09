@@ -6,4 +6,5 @@ title: YE BUTTON
         PRAY FOR ME
         %br
         I'M ABOUT TO HIT THE
-    %a.button.large.regular.square.custom{:href => "javascript:void(0);"} YE BUTTON
+    %audio{:id => "music", :src => "assets/yebutton.m4a"}
+    %a.button.regular.square.custom{:href => "javascript:void(0);", :onclick =>"play()"} YE BUTTON

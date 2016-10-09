@@ -1,4 +1,4 @@
-/* Button - these styles are the good stuff
+/* Buttons
  * Made by: Joshua Hibbert
  * Source: https://codepen.io/joshnh/pen/KqzvG
  */
@@ -28,6 +28,10 @@
     position: relative;
     text-decoration: none;
     vertical-align: middle;
+    font-size:3em;
+    @media (max-width: 480px) {
+        font-size:2em;
+    }
 }
 .button:hover {
     outline: none;
@@ -103,78 +107,6 @@
 
 .small {
     font-size: .75em;
-}
-
-/* Regular */
-
-.regular {
-    border-radius: .5em;
-}
-
-/* Square */
-
-.square {
-    border-radius: .25em;
-}
-
-/* Round */
-
-.round {
-    border-radius: 1.25em;
-}
-
-/* Red */
-
-.red {
-    background-color: #ff6c6f;
-}
-
-/* Orange */
-
-.orange {
-    background-color: #f6cf6f;
-}
-
-/* Yellow */
-
-.yellow {
-    background-color: #fff6c6;
-}
-
-/* Green */
-
-.green {
-    background-color: #6fcf6f;
-}
-
-/* Blue */
-
-.blue {
-    background-color: #6fc6ff;
-}
-
-/* Purple */
-
-.purple {
-    background-color: #f6c6ff;
-}
-
-/* White */
-
-.white {
-    background-color: #eee;
-}
-
-/* Grey */
-
-.grey {
-    background-color: #999;
-}
-
-/* Black */
-
-.black {
-    background-color: #444;
 }
 
 /* Custom */
