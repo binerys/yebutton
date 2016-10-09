@@ -765,14 +765,6 @@ body {
   background: white; }
 
 /* line 45, site.css.scss */
-h1 {
-  color: #000;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0; }
-
-/* line 54, site.css.scss */
 .toplayer {
   width: 50%;
   height: 100%;
@@ -783,13 +775,22 @@ h1 {
   bottom: 0;
   z-index: 1;
   margin: 0 auto; }
-  /* line 65, site.css.scss */
+  /* line 56, site.css.scss */
   .toplayer .content {
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
+    /* line 60, site.css.scss */
+    .toplayer .content h1 {
+      color: #332C2D;
+      font-family: "iron-on_blackletterregular";
+      font-size: 4em; }
+      @media (max-width: 480px) {
+        /* line 60, site.css.scss */
+        .toplayer .content h1 {
+          font-size: 2em; } }
 
-/* line 73, site.css.scss */
+/* line 72, site.css.scss */
 .animate {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s; }
