@@ -409,7 +409,7 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* Button - these styles are the good stuff
+/* Buttons
  * Made by: Joshua Hibbert
  * Source: https://codepen.io/joshnh/pen/KqzvG
  */
@@ -433,18 +433,23 @@ textarea {
   padding: .5em 1.5em .75em;
   position: relative;
   text-decoration: none;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 3em; }
+  @media (max-width: 480px) {
+    /* line 6, _button.scss */
+    .button {
+      font-size: 2em; } }
 
-/* line 32, _button.scss */
+/* line 36, _button.scss */
 .button:hover {
   outline: none; }
 
-/* line 35, _button.scss */
+/* line 39, _button.scss */
 .button:hover,
 .button:focus {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.25), inset 0 0 0 3em rgba(255, 255, 255, 0.2), 0 0.25em 0.25em rgba(0, 0, 0, 0.05); }
 
-/* line 45, _button.scss */
+/* line 49, _button.scss */
 .button:active {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.1), inset 0 0 0 3em rgba(255, 255, 255, 0.2), inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.25);
   margin-top: .25em;
@@ -452,98 +457,38 @@ textarea {
   padding-bottom: .5em; }
 
 /* Light Text */
-/* line 60, _button.scss */
+/* line 64, _button.scss */
 .lightText {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.05), inset 0 -0.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.5), 0 0.25em 0.25em rgba(0, 0, 0, 0.1);
   color: #fff;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25); }
 
-/* line 70, _button.scss */
+/* line 74, _button.scss */
 .lightText:hover,
 .lightText:focus {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.05), inset 0 -0.2em 0 rgba(255, 255, 255, 0.1), inset 0 -0.25em 0 rgba(0, 0, 0, 0.5), inset 0 0 0 3em rgba(255, 255, 255, 0.2), 0 0.25em 0.25em rgba(0, 0, 0, 0.1); }
 
-/* line 80, _button.scss */
+/* line 84, _button.scss */
 .lightText:active {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25), inset 0 2px 0 rgba(255, 255, 255, 0.1), inset 0 1.2em 0 rgba(255, 255, 255, 0.05), inset 0 0 0 3em rgba(255, 255, 255, 0.2), inset 0 0.25em 0.5em rgba(0, 0, 0, 0.05), 0 -1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.25); }
 
 /* Large */
-/* line 92, _button.scss */
+/* line 96, _button.scss */
 .large {
   font-size: 3em; }
 
 /* Medium */
-/* line 98, _button.scss */
+/* line 102, _button.scss */
 .medium {
   font-size: 1em; }
 
 /* Small */
-/* line 104, _button.scss */
+/* line 108, _button.scss */
 .small {
   font-size: .75em; }
 
-/* Regular */
-/* line 110, _button.scss */
-.regular {
-  border-radius: .5em; }
-
-/* Square */
-/* line 116, _button.scss */
-.square {
-  border-radius: .25em; }
-
-/* Round */
-/* line 122, _button.scss */
-.round {
-  border-radius: 1.25em; }
-
-/* Red */
-/* line 128, _button.scss */
-.red {
-  background-color: #ff6c6f; }
-
-/* Orange */
-/* line 134, _button.scss */
-.orange {
-  background-color: #f6cf6f; }
-
-/* Yellow */
-/* line 140, _button.scss */
-.yellow {
-  background-color: #fff6c6; }
-
-/* Green */
-/* line 146, _button.scss */
-.green {
-  background-color: #6fcf6f; }
-
-/* Blue */
-/* line 152, _button.scss */
-.blue {
-  background-color: #6fc6ff; }
-
-/* Purple */
-/* line 158, _button.scss */
-.purple {
-  background-color: #f6c6ff; }
-
-/* White */
-/* line 164, _button.scss */
-.white {
-  background-color: #eee; }
-
-/* Grey */
-/* line 170, _button.scss */
-.grey {
-  background-color: #999; }
-
-/* Black */
-/* line 176, _button.scss */
-.black {
-  background-color: #444; }
-
 /* Custom */
-/* line 182, _button.scss */
+/* line 114, _button.scss */
 .custom {
   background-color: #960606;
   color: #f35a66; }
