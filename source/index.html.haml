@@ -1,10 +1,15 @@
 ---
 title: YE BUTTON
 ---
-.welcome
-    %h1 
-        PRAY FOR ME
-        %br
-        I'M ABOUT TO HIT THE
-    %audio{:id => "music", :src => "assets/yebutton.m4a"}
-    %a.button.regular.square.custom{:href => "javascript:void(0);", :onclick =>"play()"} YE BUTTON
+%div{:id =>"fullpage"}
+    .section{:id => "tlop"}
+        .slide.tlop1 
+        .slide.tlop2 
+        .slide.tlop3
+        .slide.tlop4
+
+.animate.toplayer
+    .content
+        %audio{:id => "music", :src => "assets/yebutton.m4a"}
+        %a.button.regular.circle.custom{:href => "javascript:void(0);", :onclick =>"play()"} YE
+

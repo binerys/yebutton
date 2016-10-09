@@ -8,16 +8,39 @@
 
 @charset "utf-8";
 @import "normalize";
+@import "jquery.fullPage";
 @import "kulers";
 @import "button";
 
 
+
 body {
-  background: get-color($key: 'pablo-orange');
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#tlop {
+  
+  .tlop1 {
+    background: get-color($key: 'pablo-orange');
+  }
+
+  .tlop2 {
+    background: get-color($key: 'pablo-teal');
+  }
+
+  .tlop3 {
+    background: get-color($key: 'pablo-brown');
+  }
+
+  .tlop4 {
+    background: get-color($key: 'pablo-beige');
+  }
+}
+
+#yeezus {
+  background: white;
+}
 
 h1 {
   color: #000;
@@ -28,7 +51,26 @@ h1 {
 }
 
 
-.welcome {
+.toplayer {
+  width:50%;
+  height:100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: 0 auto;
+  
+  .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+
+.animate {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;
 }
